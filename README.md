@@ -1,30 +1,13 @@
-Agency Jekyll theme
+DASIP 2026 Website Sources
 ====================
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+# WARNING
 
-# How to use
+**If you are searching for the website, it is at https://dasip-2026.github.io**
 
-###Portfolio 
+This repository only hosts the jekyll sources.
 
-Portfolio projects are in '/_posts'
+## Credit
 
-Images are in '/img/portfolio'
+Based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
 
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
-
-
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
