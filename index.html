@@ -1,3 +1,71 @@
+---
+year: 2026
+canonical-url: 'https://dasip-2026.github.io/'
+hipeac: {dates: '26-28 January', location: 'Kraków, Poland', url: 'https://www.hipeac.net/2026/krakow/#/'}
+edition-no: '19th'
+schedule: {
+	preliminary: { 
+		initial: {abstract: '15 September 2025', submission: '19 September 2025', notification: 'sent'},
+		extended: {abstract: '21 September 2025', submission: '26 September 2025', notification: ''}
+	},
+	main: {
+		initial: {abstract: '10 November 2025', submission: '17 November 2025', notification: 'sent', camera: '17 January 2026'},
+		extended: {abstract: '17 November 2025', submission: '24 November 2025', notification: '', camera: ''}
+	}
+}
+chairs: [
+	{name: 'Marcin Kowalczyk', affiliation: 'AGH University of Kraków', location: 'Kraków, Poland', mail: 'kowalczyk@agh.edu.pl'},
+	{name: 'Camille Monière', affiliation: 'Lab-STICC / University Bretagne Sud', location: 'Lorient, France', mail: 'camille.moniere@univ-ubs.fr'},
+]
+tpc: [
+	{name: 'Gabriel Caffarena', affiliation: 'University CEU San Pablo, Spain'},
+	{name: 'João Canas Ferreira', affiliation: 'University of Porto, Portugal'},
+	{name: 'Daniel Chillet', affiliation: 'IRISA / ENSSAT University of Rennes 1, France'},
+	{name: 'Christopher Claus', affiliation: 'Robert Bosch GmbH, Germany'},
+	{name: 'Dominique Dallet', affiliation: 'IMS / ENSEIRB-Matmeca Bordeaux-INP, France'},
+	{name: 'Martin Danek', affiliation: 'Daiteq s.r.o., Czechia'},
+	{name: 'Milos Drutarovsky', affiliation: 'Technical University of Kosice, Slovak Republic'},
+	{name: 'Guy Gogniat', affiliation: 'Lab-STICC / University Bretagne Sud, France'},
+	{name: 'Bertrand Granado', affiliation: 'Sorbonne Université, France'},
+	{name: 'Oscar Gustafsson', affiliation: 'Linköping University, Sweden'},
+	{name: 'Frank Hannig', affiliation: 'Friedrich-Alexander University Erlangen-Nürnberg, Germany'},
+	{name: 'Kamil Jeziorek', affiliation: '	AGH University of Kraków, Poland'},
+	{name: 'Mateusz Komorkiewicz', affiliation: 'IEEE, Poland'},
+	{name: 'Bertrand Le Gal', affiliation: 'INRIA / ENSSAT University of Rennes 1, France'},
+	{name: 'Yannick Le Moullec', affiliation: 'Tallinn University of Technology, Estonia'},
+	{name: 'Johan Lilius', affiliation: 'Åbo Akademi University, Finland'},
+	{name: 'Kevin J. M. Martin', affiliation: 'Lab-STICC / University Bretagne-Sud, France'},
+	{name: 'Vincent Migliore', affiliation: 'LAAS-CNRS Université de Toulouse, France'},
+	{name: 'Jean Francois Nezan', affiliation: 'IETR / INSA Rennes, France'},
+	{name: 'Andrés Otero', affiliation: 'Universidad Politécnica de Madrid, Spain'},
+	{name: 'Alessandro Palumbo', affiliation: 'INRIA Rennes, France'},
+	{name: 'Lazaros Papadopoulos', affiliation: 'Democritus University of Thrace, Greece'},
+	{name: 'Maxime Pelcat', affiliation: 'IETR / INSA Rennes, France'},
+	{name: 'Christian Pilato', affiliation: 'Politecnico di Milano, Italy'},
+	{name: 'Jorge Portilla', affiliation: 'Universidad Politécnica de Madrid, Spain'},
+	{name: 'Francesco Ratto', affiliation: 'Università degli Studi di Cagliari, Italy'},
+	{name: 'Tiago Rocha', affiliation: 'INESC-ID Universidade de Lisboa, Portugal'},
+	{name: 'Nuno Roma', affiliation: 'Universidade de Lisboa, Portugal'},
+	{name: 'Olivier Romain', affiliation: 'University of Cergy Pontoise, France'},
+	{name: 'Claudio Rubattu', affiliation: 'University of Sassari, Italy'},
+	{name: 'Ruben Salvador', affiliation: 'CentraleSupélec - IETR, France'},
+	{name: 'Hubert Szolc', affiliation: 'AGH University of Kraków, Poland'},
+	{name: 'Mateusz Wąsala', affiliation: 'AGH University of Kraków, Poland'},
+]
+sc: [
+	{name: 'João M. P. Cardoso', affiliation: 'University of Porto, Portugal'},
+	{name: 'Miguel Chavarrías', affiliation: 'Universidad Politécnica de Madrid,Spain'},
+	{name: 'Jean-Pierre David', affiliation: 'Ecole Polytechnique de Montreal, Canada'},
+	{name: 'Karol Desnos', affiliation: 'INSA Rennes - IETR laboratory, France'},
+	{name: 'Diana Goehringer', affiliation: 'TU Dresden, Germany'},
+	{name: 'Marek Gorgoń', affiliation: 'AGH University of Science and Technology, Poland'},
+	{name: 'Tomasz Kryjak', affiliation: 'AGH University of Science and Technology, Poland'},
+	{name: 'Sergio Pertuz', affiliation: 'TU Dresden, Germany'},
+	{name: 'Sebastien Pillement', affiliation: 'University of Nantes - IETR, France'},
+	{name: 'Andrea Pinna', affiliation: 'Sorbonne University, France'},
+	{name: 'Alfonso Rodríguez', affiliation: 'Universidad Politécnica de Madrid, Spain'}	
+]
+---
 <!DOCTYPE html>
 <html>
 
@@ -7,11 +75,11 @@
     <meta name="google-site-verification" content="CD-NF695nVX_FE4a9NS3SBsWEXRn8b0NqjxZ1nP-0zk" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DASIP 2026</title>
+	<title>DASIP {{ page.year }}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description"
-        content="19th Workshop on Design and Architectures for Signal and Image Processing (DASIP 2026)">
-    <link rel="canonical" href="https://dasip-2026.github.io/">
+		  content="{{ page.edition-no }} Workshop on Design and Architectures for Signal and Image Processing (DASIP {{ page.year }})">
+	<link rel="canonical" href="{{ page.canonical-url }}">
     <!--
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 -->
@@ -56,7 +124,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">DASIP 2026</a>
+				<a class="navbar-brand page-scroll" href="#page-top">DASIP {{ page.year }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,10 +173,11 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">DASIP 2026: Workshop on Design and Architectures for Signal and Image
+				<div class="intro-heading">DASIP {{ page.year }}: Workshop on Design and Architectures for Signal and Image
                     Processing</div>
-                <div class="intro-lead-in">In conjunction with the HiPEAC 2026 Conference in Kraków, Poland, January
-                    26-28, 2026</div>
+				<div class="intro-lead-in">
+					In conjunction with the HiPEAC {{ page.year }} Conference in {{ page.hipeac.location }}, {{ page.hipeac.dates }} {{ page.year }}
+                </div>
                 <a href="#callforpapers" class="page-scroll btn btn-xl">Call for Papers</a>
                 <a href="" id="publisher_link_btn" class="btn btn-xl">Conference Proceeding</a>
                 <!--    <a href="#portfolio" class="btn btn-xl">WORKSHOP PROGRAM</a> -->
@@ -129,13 +198,13 @@
                         in custom embedded, edge and cloud computing architectures and systems.</h3>
                     <h3 class="section-subheading text-muted">The workshop program will include keynote speeches and
                         contributed paper sessions.</h3>
-                    <h3 class="section-subheading text-muted">The DASIP 2026 proceedings will be published in the
+					<h3 class="section-subheading text-muted">The DASIP {{ page.year }} proceedings will be published in the
                         Springer LNCS Series and made available on the <a href="" id="publisher_link" target="_blank"
                             rel="noopener">Springer website</a>.
                     </h3>
                     <h3 class="section-subheading text-muted"> <b><span
                                 style="color: #eec126; text-decoration: none;">Selected
-                                papers of DASIP 2026 will be invited to submit an extended version of their work to
+								papers of DASIP {{ page.year }} will be invited to submit an extended version of their work to
                                 Elsevier's Journal of Systems Architecture (JSA).</span></b></h3>
                     <h3 class="section-subheading text-muted">&nbsp;</h3>
 
@@ -150,10 +219,10 @@
                         <i class="fa fa-location-dot fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Venue</h4>
-                    <p class="text-muted">The 19th Workshop on Design and Architectures for Signal and Image Processing
-                        (DASIP 2026) will take place in conjunction with the<br><a
-                            href="https://www.hipeac.net/2026/krakow/#/" target="_blank">HiPEAC 2026 conference</a> in
-                        Krakow, Poland, January 26 - 28, 2026.</p>
+					<p class="text-muted">The {{ page.edition-no }} Workshop on Design and Architectures for Signal and Image Processing
+                        (DASIP {{ page.year }}) will take place in conjunction with the<br>
+						<a href="{{ page.hipeac.url }}" target="_blank">HiPEAC {{ page.year }} conference</a>
+						in {{ page.hipeac.location }}, {{ page.hipeac.dates }} {{ page.year }}.</p>
                     <a href="https://www.hipeac.net/" target="_blank" rel="noopener"><img loading="lazy"
                             src="img/logos/hipeac.png" alt="HiPEAC Logo" width="148" height="106"></a>
                 </div>
@@ -175,18 +244,18 @@
                     <h4 class="service-heading">Important Dates</h4>
                     <div class="col-lg-12 portfolio-item text-center">
                     </div>
-                    <p>Preliminary Cycle <i>(closed)</i><br>
+					<p>Preliminary Cycle<br>
                         <tag class="text-muted">
-                        Abstract submission deadline: <del>15 September 2025</del> &rarr; <b>21 September 2025</b><br>
-                        Paper submission deadline: <del>19 September 2025</del> &rarr; <b>26 September 2025</b><br>
-                            Notification and feedbacks: sent.</tag>
+						Abstract submission deadline: {% unless page.schedule.preliminary.extended.abstract == empty %}<del>{{ page.schedule.preliminary.initial.abstract }}</del> &rarr; <b>{{ page.schedule.preliminary.extended.abstract }}</b>{% else %}{{ page.schedule.preliminary.initial.abstract }}{% endunless %}<br>
+                        Paper submission deadline: {% unless page.schedule.preliminary.extended.submission == empty %}<del>{{ page.schedule.preliminary.initial.submission }}</del> &rarr; <b>{{ page.schedule.preliminary.extended.submission }}</b>{% else %}{{ page.schedule.preliminary.initial.submission }}{% endunless %}<br>
+                        Notification and feedbacks: {% unless page.schedule.preliminary.extended.notification == empty %}<del>{{ page.schedule.preliminary.initial.notification }}</del> &rarr; <b>{{ page.schedule.preliminary.extended.notification }}</b>{% else %}{{ page.schedule.preliminary.initial.notification }}{% endunless %}</tag>
                     </p>
                     <p>Main Cycle<br>
                         <tag class="text-muted">
-                            Abstract submission deadline: <del>10 November 2025</del> &rarr; <b>17 November 2025</b><br>
-                            Paper submission deadline: <del>17 November 2025</del> &rarr; <b>24 November 2025</b><br>
-                            Notification of acceptance: 19 December 2025<br>
-                            Camera ready submission deadline: 17 January 2026</tag>
+						Abstract submission deadline: {% unless page.schedule.main.extended.abstract == empty %}<del>{{ page.schedule.main.initial.abstract }}</del> &rarr; <b>{{ page.schedule.main.extended.abstract }}</b>{% else %}{{ page.schedule.main.initial.abstract }}{% endunless %}<br>
+                        Paper submission deadline: {% unless page.schedule.main.extended.submission == empty %}<del>{{ page.schedule.main.initial.submission }}</del> &rarr; <b>{{ page.schedule.main.extended.submission }}</b>{% else %}{{ page.schedule.main.initial.submission }}{% endunless %}<br>
+                        Notification: {% unless page.schedule.main.extended.notification == empty %}<del>{{ page.schedule.main.initial.notification }}</del> &rarr; <b>{{ page.schedule.main.extended.notification }}</b>{% else %}{{ page.schedule.main.initial.notification }}{% endunless %}<br>
+						Camera-ready submission deadline: {% unless page.schedule.main.extended.camera == empty %}<del>{{ page.schedule.main.initial.camera }}</del> &rarr; <b>{{ page.schedule.main.extended.camera }}</b>{% else %}{{ page.schedule.main.initial.camera }}{% endunless %}</tag>
                     </p>
                     <p><i>All deadlines are for 23:59 Anywhere on Earth (AoE)</i></p>
                 </div>
@@ -351,8 +420,8 @@
                         <i class="fa fa-landmark fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Registration</h4>
-                    <p class="text-muted">DASIP 2026 is a HiPEAC-based workshop. Hence, a <a
-                            href="https://www.hipeac.net/2026/krakow/#/registration/" target="_blank"
+                    <p class="text-muted">DASIP {{ page.year }} is a HiPEAC-based workshop. Hence, a <a
+					   href="{{ page.hipeac.url }}registration/" target="_blank"
                             rel="noopener">registration at HiPEAC</a> is required.</p>
 
                     <p class="text-muted">Please be aware that for each accepted paper, at least one of the authors
@@ -507,24 +576,16 @@
             </div>
 
             <div class="row text-center">
-
+				{% for member in page.chairs %}
                 <div class="col-sm-6">
-                    <p class="text-muted">Marcin Kowalczyk<br>
-                        AGH University of Kraków,<br>
-                        Kraków, Poland<br>
-                        <a href="mailto:kowalczyk@agh.edu.pl">kowalczyk@agh.edu.pl</a>
+					<p class="text-muted">{{ member.name }}<br>
+					{{ member.affiliation }}<br>
+					{{ member.location }}<br>
+					<a href="mailto:{{ member.mail }}">{{ member.mail }}</a>
                     </p>
                 </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Camille Monière<br>
-                        Université Bretagne Sud - Lab-STICC UMR 6285,<br>
-                        Lorient, France<br>
-                        <a href="mailto:camille.moniere@univ-ubs.fr">camille.moniere@univ-ubs.fr</a>
-                    </p>
-                </div>
-
-            </div>
+				{% endfor %}
+			</div>
 
             <!-- Steering Committee -->
             <div class="row">
@@ -538,60 +599,11 @@
             </div>
 
             <div class="row text-center">
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Alfonso Rodríguez<br>Universidad Politécnica de Madrid, Madrid, Spain</p>
+			{% for member in page.sc %}
+				<div class="col-sm-6">
+					<p class="text-muted">{{ member.name }}<br>{{ member.affiliation }}</p>
                 </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Andrea Pinna<br>Sorbonne University, Paris, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Diana Goehringer<br>TU Dresden, Dresden, Germany</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Jean-Pierre David<br>Ecole Polytechnique de Montreal, Montreal, Canada</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">João M. P. Cardoso<br>University of Porto, Porto, Portugal</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Karol Desnos<br>INSA Rennes - IETR laboratory, Rennes, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Marek Gorgoń<br>AGH University of Science and Technology, Kraków, Poland</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Michael Huebner<br>Brandenburg University of Technology, Cottbus-Senftenberg,
-                        Germany</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Miguel Chavarrías<br>Universidad Politécnica de Madrid, Madrid, Spain</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Paolo Meloni<br>University of Cagliari, Cagliari, Italy</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Sebastien Pillement<br>University of Nantes - IETR, Nantes, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Sergio Pertuz<br>TU Dresden, Dresden, Germany</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Tomasz Kryjak<br>AGH University of Science and Technology, Kraków, Poland</p>
-                </div>
-
+			{% endfor %}
             </div>
 
             <!-- Technical Program Committee -->
@@ -606,122 +618,12 @@
             </div>
 
             <div class="row text-center">
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Andrés Otero<br>Universidad Politécnica de Madrid, Spain</p>
+			{% for member in page.tpc %}
+				<div class="col-sm-6">
+					<p class="text-muted">{{ member.name }}<br>{{ member.affiliation }}</p>
                 </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Arnaldo Oliveira<br>Universidade de Aveiro - DETI / Instituto de
-                        Telecomunicações, Portugal</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Bertrand Granado<br>Sorbonne Université, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Christian Pilato<br>Politecnico di Milano, Italy</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Christopher Claus<br>Robert Bosch GmbH, Germany</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Claudio Rubattu<br>University of Sassari, Italy</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Daniel Chillet<br>IRISA/ENSSAT University of Rennes 1, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Dimitrios Soudris<br>National Technical University of Athens, Greece</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Eduardo de La Torre<br>Universidad Politécnica de Madrid, Spain</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Francesco Ratto<br>Università degli Studi di Cagliari, Italy</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Frank Hannig<br>Friedrich-Alexander University Erlangen-Nürnberg, Germany</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Gabriel Caffarena<br>University CEU San Pablo, Spain</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Georgios Zervakis<br>University of Patras, Greece</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Gustavo Marrero Callico<br>Universidad de Las Palmas de Gran Canaria, Spain
-                    </p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Guy Gogniat<br>Université de Bretagne Sud - UEB, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Jean Francois Nezan<br>INSA Rennes, IETR laboratory, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">João Canas Ferreira<br>University of Porto, Portugal</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Jorge Portilla<br>Universidad Politécnica de Madrid, Spain</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Kevin J. M. Martin<br>Lab-STICC - Université de Bretagne-Sud, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Martin Danek<br>Daiteq s.r.o., Czechia</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Mateusz Komorkiewicz<br>IEEE, Poland</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Maxime Pelcat<br>IETR/INSA, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Milos Drutarovsky<br>Technical University of Kosice, Slovak Republic</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Nuno Roma<br>Universidade de Lisboa, Portugal</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Olivier Romain<br>University of Cergy Pontoise, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Oscar Gustafsson<br>Linköping University, Sweden</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Ruben Salvador<br>CentraleSupélec - IETR, France</p>
-                </div>
-
-                <div class="col-sm-6">
-                    <p class="text-muted">Yannick Le Moullec<br>Tallinn University of Technology, Estonia</p>
-                </div>
+			{% endfor %}
             </div>
-
         </div>
     </section>
 
@@ -1171,7 +1073,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; 2026 DASIP Workshops Series</span>
+                    <span class="copyright">Copyright &copy; {{ page.year }} DASIP Workshops Series</span>
                 </div>
                 <div class="col-md-4">
                 </div>
