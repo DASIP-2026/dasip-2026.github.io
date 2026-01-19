@@ -17,6 +17,9 @@ chairs: [
 	{name: 'Marcin Kowalczyk', affiliation: 'AGH University of Kraków', location: 'Kraków, Poland', mail: 'kowalczyk@agh.edu.pl'},
 	{name: 'Camille Monière', affiliation: 'Lab-STICC / University Bretagne Sud', location: 'Lorient, France', mail: 'camille.moniere@univ-ubs.fr'},
 ]
+speakers: [
+	{firstlast: 'Paweł Skruch', img: img/speakers1.png, bio: "Paweł Skruch is a Professor at the AGH University of Kraków. He graduated in 2001 in Automation and Robotics, obtained his PhD in 2006, and completed his habilitation in 2016. Since 2025, he has held the title of Full Professor in the Department of Automatic Control and Robotics at AGH, where he leads the Dynamic Systems and Control Theory Group. His expertise lies at the intersection of control theory, artificial intelligence, and autonomous systems, with applications in autonomous vehicles, robotics, and advanced driver assistance systems. He has participated in numerous interdisciplinary projects combining engineering, computer science, and applied mathematics, focusing on the design of safe and reliable solutions for modern mobility and intelligent systems. He has led several research projects funded by the European Union and the National Centre for Research and Development in Poland, as well as industry projects in automated driving, whose results have been successfully implemented by global automotive corporations. He actively collaborates with research institutions in Europe, Asia, and the United States.", title: 'TBA', abstract: 'TBA'},
+]
 tpc: [
 	{name: 'Alessandro Palumbo', affiliation: 'INRIA Rennes, France'},
     {name: 'Andrea Pinna', affiliation: 'Sorbonne University, France'},
@@ -451,23 +454,26 @@ sc: [
                 </div>
             </div>
 
+			{% unless page.speakers.size > 0 %}
             <!-- TBA -->
             <div class="col-lg-12 text-center">
                 <img src="/img/tba.svg" width="40%">
             </div>
-
+			{% endunless %}
+			{% for member in page.speakers %}
             <!-- SPEAKER 1 -->
-            <!-- <div class="col-lg-12 text-center">
-                <span class="fa-stack fa-3x">
-                    <img class="img-circle img-responsive" src="img/speakers/speaker1.png">
+            <div class="col-lg-12 text-center">
+                <span class="fa-stack fa-3x" style="height: 4cm;">
+					<img class="img-circle img-responsive" src="{{ member.img }}">
                 </span>
                 <br><br>
-                <h4 class="service-heading">Speaker 1</h4>
-                <p class="text-muted">Biography of Speaker 1.</p>
+				<h4 class="service-heading">{{ member.firstlast }}</h4>
+				<p class="text-muted">{{ member.bio }}</p>
 
-                <p class="text-muted"> <strong style="color: black;">Title: TITLE</strong> </p>
-                <p class="text-muted">Abstract: ABSTRACT</p>
-            </div> -->
+				<p class="text-muted"> <strong style="color: black;">Title: {{ member.title }}</strong> </p>
+				<p class="text-muted">Abstract: {{ member.abstract }}</p>
+            </div>
+			{% endfor %}
 
             <!-- Speaker 2 -->
 
