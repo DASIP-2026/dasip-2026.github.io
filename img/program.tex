@@ -1,0 +1,56 @@
+\documentclass{standalone}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+%\usepackage[margin=0pt, bottom=0pt, paperwidth=12cm, paperheight=12cm]{geometry}
+\usepackage{noto}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{arydshln}
+
+\makeatletter
+\def\adl@drawiv#1#2#3{%
+        \hskip.5\tabcolsep
+        \xleaders#3{#2.5\@tempdimb #1{1}#2.5\@tempdimb}%
+                #2\z@ plus1fil minus1fil\relax
+        \hskip.5\tabcolsep}
+\newcommand{\cdashlinelr}[1]{%
+  \noalign{\vskip\aboverulesep
+           \global\let\@dashdrawstore\adl@draw
+           \global\let\adl@draw\adl@drawiv}
+  \cdashline{#1}
+  \noalign{\global\let\adl@draw\@dashdrawstore
+           \vskip\belowrulesep}}
+\makeatother
+\begin{document}
+	
+\huge
+\centering
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+\centering
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{ccc}
+\toprule
+\bf Time                           & \bf Tuesday 27 Jan.               & \bf Wednesday 28 Jan.                                                           \\ \midrule
+\bf 10:00 - 10:15                  & Welcome and opening        &                                                                        \\ \midrule
+\multirow{3}{*}{\bf 10:15 - 11:00} & \multirow{3}{*}{Keynote 1} & \multirow{3}{*}{Keynote 2}                                             \\
+                               &                            &                                                                        \\
+                               &                            &                                                                        \\ \midrule
+\bf 11:00 - 11:30                  & Coffee break               & Coffee break                                                           \\ \midrule
+\multirow{3}{*}{\bf 11:30 - 12:50} & \multirow{3}{*}{Session 1} & \multirow{3}{*}{Session 4}                                             \\
+                               &                            &                                                                        \\
+                               &                            &                                                                        \\ \midrule
+\multirow{2}{*}{\bf 12:50 - 14:00} & \multirow{2}{*}{Lunch}                      & Best Paper Award and Closing \\ \cdashlinelr{3-3}
+								   & & \\ \midrule
+\multirow{3}{*}{\bf 14:00 - 15:20} & \multirow{3}{*}{Session 2} & \multirow{3}{*}{}                                                      \\
+                               &                            &                                                                        \\
+                               &                            &                                                                        \\ \midrule
+\bf 15:20 - 16:00                  & Coffee break               &                                                                        \\ \midrule
+\multirow{3}{*}{\bf 16:00 - 17:00} & \multirow{3}{*}{Session 3} & \multirow{3}{*}{}                                                      \\
+                               &                            &                                                                        \\
+                               &                            &                                                                        \\ \midrule
+\bf 17:30 - 21:30                  & Social event - Dinner      &                                                                        \\ \bottomrule
+\end{tabular}
+\end{document}
